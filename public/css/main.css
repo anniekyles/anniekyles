@@ -1,5 +1,13 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
 /* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   Base styles: opinionated defaults
    ========================================================================== */
 
 html,
@@ -11,28 +19,29 @@ textarea {
 }
 
 html {
-    overflow: -moz-scrollbars-vertical;
-    overflow-y: scroll;
-}
-
-body {
     font-size: 1em;
     line-height: 1.4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Cutive", serif;
-}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
 
 ::-moz-selection {
-    background: #b3d4fc; /* baby blue*/
+    background: #b3d4fc;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc; /*baby blue*/
+    background: #b3d4fc;
     text-shadow: none;
 }
+
+/*
+ * A better looking default horizontal rule
+ */
 
 hr {
     display: block;
@@ -43,9 +52,21 @@ hr {
     padding: 0;
 }
 
-img {
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
     vertical-align: middle;
 }
+
+/*
+ * Remove default fieldset styles.
+ */
 
 fieldset {
     border: 0;
@@ -53,78 +74,34 @@ fieldset {
     padding: 0;
 }
 
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
 textarea {
     resize: vertical;
 }
 
-.chromeframe {
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
     margin: 0.2em 0;
     background: #ccc;
     color: #000;
     padding: 0.2em 0;
 }
 
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+/* ==========================================================================
+   Author's custom styles
    ========================================================================== */
 
-body {
-    font: medium 'Cabin', Helvetica, 'Helvetica Neue', 'Neue Arial';
-}
 
-.main-container{
-    font-size: .8em;
-}
 
-.wrapper {
-    width: 90%;
-    margin: 0 5%;
-}
 
-/* ===================
-    ALL
-   =================== */
 
-h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, p:first-child {
-    margin-top: 0;
-}
 
-.header-container {
-/*    border-bottom: 20px solid purple;*/
-}
-
-.footer-container,
-.main aside {
-    /*border-top: 1px black solid;*/
-}
-
-footer p {
-    margin: 0;
-    font-size: small;
-    color: black;
-    border-top: 1px black solid;
-    padding-top: .5em;
-}
-
-.header-container,
-.footer-container,
-.main aside {
-    background-color: #9DC013; /*pale green*/
-}
-
-.title {
-    color: white;
-}
-
-caption {
-    font-size: small;
-}
-
-#instructions {
-    margin-top: 2em;
-    margin-left: 2em;
-}
 
 /* ===================
     FORM
@@ -151,130 +128,6 @@ textarea {
 }
 
 
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-#header {
-    position: relative;
-}
-
-nav {
-    top: 0;
-    right: 0;
-    width: 100%;
-    float: right;
-    font-size: 1em;
-}
-
-nav>ul {
-    margin: 0;
-    padding: 0;
-    /*border:1px red solid;*/
-}
-
-nav li {
-    /*border: 1px red solid;*/
-}
-
-#extra-services {
-    display: none;
-    /*visibility: hidden;*/
-    text-align: left;
-    /*position: fixed;*/
-}
-
-nav a, a, nav .a {
-    display: inline-block;
-    padding-bottom: 10px;
-    /*padding: 15px 0;*/
-    /*outline: 1px black solid;*/
-    text-decoration: none;
-    /*font-weight: bold;*/
-    width: 100%;
-    color: black;
-}
-
-nav .a {
-    cursor: pointer;
-}
-nav .a:hover {
-    text-decoration: underline;
-}
-
-a,
-nav a:hover,
-nav a:visited {
-    color: black;
-}
-
-#head-inner h2:first-child {
-    margin-top: 2em;
-}
-
-a:hover, nav a:hover {
-    text-decoration: underline;
-}
-
-.contact-details:first-child {
-    margin-top: 1em;
-}
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-    padding: 30px 0;
-}
-
-.main article h1 {
-    font-size: 1.7em;
-}
-
-.main article h2 {
-    font-size: 1.3em;
-}
-
-.main aside {
-    color: white;
-    padding: 0px 5% 10px;
-}
-
-.footer-container footer {
-    padding: 20px 0;
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-    padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-.header-container {
-    background-color: #9DC013; /*pale green*/
-    border-top: 2.4em #9DC013 solid;
-}
-
-
-#head-inner>img, #contact-details {
-    display: block;
-    margin-bottom: 2em;
-    /*outline: 1px black solid;*/
-}
-
-#head-inner h2 {
-    color: white;
-    font-size: 1em;
-    font-weight: normal;
-    /*line-height: 1.22em;*/
-}
 
 
 
@@ -283,130 +136,20 @@ a:hover, nav a:hover {
 
 
 
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-    .main-container {
-    font-size: 1em;
-
-    }
-
-    #extra-services {
-        padding: 0;
-    }
-
-    #head-inner h2:first-child {
-        margin-top: 0;
-    }
-
-    #head-inner>img, #head-inner>div {
-        float: left;
-    }
-
-    nav a, nav .a {
-        /*float: left;*/
-        /*width: 27%;*/
-        /*margin: 0 1.7%;*/
-        padding-top: .5em;
-        margin-bottom: 0;
-        text-align: center;
-    }
-    #head-inner h2 {
-        padding-left: 3em;
-    }
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-
-
-    nav>ul{
-        border-top: 1px black solid;
-        display:table;
-        width: 100%;
-    }
-    nav>ul>li{
-        display: table-cell;
-        width: 25%;
-    }
-
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
-    nav ul li {
-        /*display: inline;*/
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
-}
-
-@media only screen and (min-width: 768px) {
-
-
-/* ============
-    WIDE: Menu
-   ============ */
-
-    #head-inner h2 {
-        font-size: 1.3em;
-        line-height: 1.22em;
-    }
-
-    .title {
-        float: left;
-    }
-
-/* ============
-    WIDE: Main
-   ============ */
-
-    .main article {
-        float: left;
-        width: calc(50% - 1.1em);
-    }
-
-    .col1 {
-        margin-right: 1.1em;
-    }
-    .col2 {
-        margin-left: 1.1em;
-    }
-
-}
-
-@media only screen and (min-width: 1140px) {
-
-/* ===============
-    Maximal Width
-   =============== */
-
-    .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
-        margin: 0 auto;
-    }
-}
 
 /* ==========================================================================
    Helper classes
    ========================================================================== */
 
+/*
+ * Image replacement
+ */
+
 .ir {
     background-color: transparent;
     border: 0;
     overflow: hidden;
+    /* IE 6/7 fallback */
     *text-indent: -9999px;
 }
 
@@ -417,10 +160,18 @@ a:hover, nav a:hover {
     height: 150%;
 }
 
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
 .hidden {
     display: none !important;
     visibility: hidden;
 }
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
 
 .visuallyhidden {
     border: 0;
@@ -433,6 +184,11 @@ a:hover, nav a:hover {
     width: 1px;
 }
 
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -443,27 +199,65 @@ a:hover, nav a:hover {
     width: auto;
 }
 
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
 .invisible {
     visibility: hidden;
 }
 
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
-    visibility: hidden;
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
 
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
 .clearfix {
     *zoom: 1;
 }
 
 /* ==========================================================================
-   Print styles
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 
 @media print {

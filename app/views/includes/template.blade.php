@@ -4,16 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Great North Auto</title>
-    <meta name="description" content="">
+    <title>Annie Kyles</title>
+    <meta name="description" content="A portfolio of Web Development and Graphic Design work">
     <meta name="viewport" content="width=device-width">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
 	{{ HTML::style("css/normalize.min.css") }}
-	{{ HTML::style("css/main.css") }}
+    {{ HTML::style("css/main.css") }}
+	{{ HTML::style("css/styles.css") }}
     {{ HTML::style('css/jquery.cleditor.css') }}
-    <link href='http://fonts.googleapis.com/css?family=Cutive' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Maven+Pro:500' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 
     <!-- all the icons -->
@@ -27,62 +30,29 @@
     <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png" />
 
-
-    <!-- js moderniser - slows page load time -->
-    <!-- <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
 </head>
+
+
 <body>
-@if(Auth::check())
-    <div id="instructions">
-        <h2>Welcome to the admin side</h2>
-        <h4>How to edit website:</h4>
-        <p>Click text to edit.</p>
-        <p>"Choose File" to upload a new photo</p>
-        <p>{{ HTML::link('pages/create','Click here to add a new page.') }}</p>
-        <p>Changes made to the website will be live as soon as you make them.</p>
-    </div>
-@endif
-    <div class="header-container">
-
-    <header id="header" class="wrapper clearfix">
-
-
-            <div id="head-inner">
-
-                <img src="{{{ URL::to('img/logo.png') }}}"  alt="Great North Auto">
-                <div id="contact-details">
-                    <h2>Call us: 09 555 3321</h2>
-                    <h2>123 Great North Road, Newton</h2>
-                    <h2>Monday to Friday 8am-5pm</h2>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-
-            <nav>
-                <ul>
-                    <li><a href="{{ URL::to('pages/1')}}"><i class="fa fa-home"></i> Home</a></li>
-                    <li>
-                        <span class="a"><i class="fa fa-wrench"></i> Services</span>
-                        <ul id="extra-services">
-
-                        	<!-- use a foreach loop to render extra-services  -->
-
-							@foreach(Page::all() as $page)
-                                @if($page->services == 1)
-                                <li>{{ HTML::link('pages/'.$page->id, $page->title) }}</li>
-                                @endif
-
-							@endforeach
-                        </ul>
-                    </li>
-                    <li><a href="{{ URL::to('pages/2')}}"><i class="fa fa-info-circle"></i> About</a></li>
-                    <li><a href="{{ URL::to('pages/contact')}}"><i class="fa fa-envelope"></i> Contact</a></li>
+    <div class="main-container" id="container">
+        <div class="main wrapper clearfix">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="top" class="group">
+            <h1 id="title">annie kyles</h1>
+            <nav class="group">
+                <i class="icon-reorder"></i>
+                <!-- <i class="fa-bars"></i> -->
+                <ul class="full-nav">
+                    <li><a href="{{ URL::to('contact')}}">contact</a></li>
+                    <li><a href="{{ URL::to('web')}}">web gallery</a></li>
+                    <li><a href="{{ URL::to('design')}}">design gallery</a></li>
+                    <li><a href="{{ URL::to('home')}}" class="selected">home</a></li>
                 </ul>
             </nav>
-        </header>
-    </div>
-    <div class="main-container">
-        <div class="main wrapper clearfix">
+        </div>
+        <div id="main" class="group">
 
 @yield('content')
 
@@ -92,15 +62,6 @@
     <div class="footer-container">
         <footer class="wrapper">
             <p>This website was crafted using <a href="http://laravel.com/">Laravel 4</a> by Annie Kyles <a href="http://www.anniekyles.com">anniekyles.com</a></p>
-            <p>
-                @if(Auth::check())
-                    You are logged in as {{ Auth::user()->username }}
-                    {{ HTML::link('pages/create','Create a new page', array('class'=>'button right')) }}
-                    {{ HTML::link('logout','Log Out', array('class'=>'button right')) }}
-                @else
-                    {{ HTML::link('login','Admin Login', array('class'=>'')) }}
-                @endif
-            </p>
         </footer>
 
     </div>
@@ -116,13 +77,19 @@
 	{{ HTML::script("js/main.js") }}
     {{ HTML::script("js/formValidation.js") }}
 
-	<!--
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src='//www.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
+        // (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        // function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        // e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        // e.src='//www.google-analytics.com/analytics.js';
+        // r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        // ga('create','UA-XXXXX-X');ga('send','pageview');
     </script>
--->
+
+    </div><!-- end main -->
 </body>
 </html>
+
+
+

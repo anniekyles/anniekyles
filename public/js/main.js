@@ -1,15 +1,6 @@
 // hide and show extra-services
 $(function(){
 
-	//--------------------- to show/hide secondary navigation ----------------------------
-    $('#extra-services').hide();
-    $('#extra-services').parent().on('click', function(){
-
-        //use '$(this)' instead of 'this' to retrieve the jQuery object instead of DOM object
-        $('#extra-services').slideToggle();
-        console.log($(this));
-    });
-
     //--------------------- to update the text on the page -------------------------------
    	$("[data-editable]").each(function(){
 		var url = window.location.href;
@@ -37,4 +28,26 @@ $(function(){
 			$(event.target).find("textarea").cleditor();
 		}
 	});
+
+
+	$('.icon-reorder').on('click', function(){
+		// console.log($(this).next());
+		$(this).next().slideToggle();
+		console.log('toggled');
+	});
+
+	console.log($(window).width());
+
+	if($(window).width() >= 480){
+
+		$('.fancybox').fancybox();
+	}
+});
+
+$(window).resize(function(){
+	if($(window).width() >= 480){
+
+		$('.fancybox').fancybox();
+		console.log('Handler for .resize() called');
+	}
 });
