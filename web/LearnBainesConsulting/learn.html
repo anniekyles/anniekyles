@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="description" content="Upgrading to Microsoft Office 2010 with your tutor Sharyn Baines">
+	<title>Upgrading to Office 2010</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="styles.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="ie-styles.css" />
+	<![endif]-->
+	<script src="vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<img src="#" alt="Baines Consulting" class="group" id="logo">
+			<nav id="navigation" class="group">
+				<ul class="float-left">
+					<li><a href="#">Homepage</a></li><li class="selected"><a href="#">My courses</a></li><li><a href="#">Personal agenda</a></li><li><a href="#">Reporting</a></li><li><a href="#">Dashboard</a></li><li><a href="#">Administration</a></li>
+				</ul><!-- end of left navigation -->
+
+				<ul class="float-right">
+					<li>
+
+						<!-- link to profile -->
+						<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+							<img id="profile-thumb" src="#">
+							Anoni Mouse
+							<i class="down-arrow"></i>
+						</a>
+					</li>
+					<li>
+						<a id="logout_button" class="logout" href="#" title="Logout">Log out</a>
+					</li>
+				</ul><!-- end of right navigation -->
+			</nav>
+		</div><!-- end of header -->
+
+		<div id="main">
+
+			<div id="course-title">
+				<img src="u.png" alt="Upgrading to Office 2010" id="course-icon">
+				<h1>Upgrading to Office 2010</h1>
+				<a href="#" class="button">Enter Course</a>
+			</div><!-- end of course title -->
+
+			<div id="left-section" class="float-left">
+				<nav id="secondary-navigation">
+					<h2>What this course offers:</h2>
+					<ul>
+						<li><a href="#">Learning Outcomes</a></li>
+						<li><a href="#">Learning Method</a></li>
+						<li class="selected"><a href="#">Course Content</a></li>
+						<li><a href="#">Intended Audience</a></li>
+						<li><a href="#">Prerequisite</a></li>
+						<li><a href="#">Certificate of Achievement</a></li>
+					</ul>
+				</nav><!-- end of secondary navigation -->
+				<p class="aside">This 30 minute video based tutorial has been designed as an introduction to the essential skills needed to keep working with minimal interruption to your working day</p>
+				<p class="aside"><img src="#" alt="Sharyn Baines" id="tutor-thumb">Your Tutor: Sharyn Baines</p>
+			</div><!-- end of left section -->
+
+			<div id="main-section" class="float-left">
+				<h2>Course Content</h2>
+				<p>Topics covered in this course include the following:</p>
+				<p class="lesson-title">Lesson 1 - Working with the Ribbon</p>
+				<p class="clickme"><img src="triangle.png" class="drop-down-triangle rotate1"> Navigate the new interface to locate familiar commands and features</p>
+				<ul class="drop-down">
+					<li>Move around the Ribbon, locate commands using the new Tab layout</li>
+					<li>Use the keyboard shortcut keys and mouse wheel to move through tabs</li>
+					<li>Hide and display the Ribbon</li>
+					<li>Display and work with Contextual tabs</li>
+				</ul>
+				<p class="lesson-title">Lesson 2 - Working with the Ribbon</p>
+				<p class="clickme"><img src="triangle.png" class="drop-down-triangle rotate1"> Navigate the new interface to locate familiar commands and features</p>
+				<ul class="drop-down">
+					<li>Move around the Ribbon, locate commands using the new Tab layout</li>
+					<li>Use the keyboard shortcut keys and mouse wheel to move through tabs</li>
+					<li>Hide and display the Ribbon</li>
+					<li>Display and work with Contextual tabs</li>
+				</ul>
+			</div><!-- end of main section -->
+
+		</div><!-- end of main -->
+	</div><!-- end of container -->
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+		// hide and show drop-down menu, and rotate triangle
+		$(function(){
+		   	$('.drop-down').hide();
+		   	$('.drop-down').prev().on('click', function(){
+	      		$('.drop-down-triangle').toggleClass('rotate1 rotate2')
+			    $('.drop-down').slideToggle();
+		   });
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+
+* {
+    /*outline: 1px black solid;*/
+}
+
+body {
+    min-width: 730px;
+    max-width: 56em;
+    font-family: 'Helvetica Neue', Helvetica, 'Neue Arial', Arial, sans-serif;
+    margin: auto;
+}
+
+#container {
+    margin: 0 5px;
+}
+
+#header {
+ /*border: 1px red solid;*/
+}
+
+#logo {
+    height: 60px;
+    width: 534px;
+    display: block;
+    margin: 1.9em auto;
+}
+
+
+h1 {
+    font-size: 28pt;
+    font-weight: normal;
+    display: inline;
+    vertical-align: top;
+
+}
+
+h1, h2, h3, h4, h5 {
+    color: #C11F21;
+}
+
+p {
+    font-style: small;
+}
+
+/*-------------------------------- navigation -----------------------------------*/
+
+.dropdown-menu {
+    display: none;
+}
+
+nav a{
+    color: white;
+    font-size: 12px;
+}
+
+#navigation {
+    background: #ffc547; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffc547 0%, #ff7d00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc547), color-stop(100%,#ff7d00)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffc547 0%,#ff7d00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffc547 0%,#ff7d00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffc547 0%,#ff7d00 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffc547 0%,#ff7d00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc547', endColorstr='#ff7d00',GradientType=0 ); /* IE6-9 */
+
+    width: 100%;
+
+
+
+}
+
+#secondary-navigation{
+
+    /*outline: 1px green solid;*/
+}
+
+#secondary-navigation a{
+
+    display: block;
+}
+
+
+
+#secondary-navigation li, #navigation li {
+    border: 1px transparent solid;
+}
+#navigation li{
+    display: inline-block;
+    border-left: 1px white solid;
+}
+
+#navigation a, .button {
+    padding: 7px;
+    line-height: 33px;
+    height: 33px;
+
+}
+#secondary-navigation, #navigation {
+    border: transparent 1px solid;
+}
+#secondary-navigation li, .button {
+
+    background: #ffc547; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffc547 0%, #ff7d00 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc547), color-stop(100%,#ff7d00)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ffc547 0%,#ff7d00 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ffc547 0%,#ff7d00 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ffc547 0%,#ff7d00 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ffc547 0%,#ff7d00 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc547', endColorstr='#ff7d00',GradientType=0 ); /* IE6-9 */
+
+    padding-left: 7px;
+    border-radius: 7px;
+    line-height: 30px;
+    color: white;
+  /*  width: 100%;*/
+
+    height: 30px;
+}
+
+.button {
+    color: black;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+
+#secondary-navigation .selected,
+#secondary-navigation li:hover{
+    background: white;
+    border: #008E39 1px solid;
+    /*color: #008E39;*/
+}
+
+#navigation .selected,
+#navigation li:hover {
+    background: white;
+    border: #008E39 1px solid;
+    /*color: #008E39;*/
+}
+
+#secondary-navigation .selected a, #navigation .selected a,
+#secondary-navigation li:hover a, #navigation li:hover a {
+    color: #008E39;
+}
+
+
+/*-------------------------------------- main ------------------------------------------------*/
+
+.aside {
+    padding-top: 20px;
+    font-size: small;
+}
+
+#course-icon {
+    width: 39px;
+    height: 33px;
+}
+
+
+#course-title {
+    margin: 30px 0;
+}
+
+#left-section {
+    width: 214px;
+
+}
+
+#tutor-thumb {
+    width: 50px;
+    float: left;
+}
+
+#main-section {
+
+    width: 70%; /*backup width for browsers that don't accept calc() */
+    width: calc(100% - 234px);
+    background-color: #FFEBD9; /*pale orange*/
+    border-radius: 7px;
+    margin-left: 20px;
+}
+
+
+#main-section * {
+
+    padding: 0 20px;
+
+}
+#main-section>h2 {
+    padding-top: 20px;
+}
+
+#main-section:last-child {
+    padding-bottom: 20px;
+}
+
+#main-section .lesson-title {
+    padding-bottom: 0;
+}
+
+#main-section .drop-down {
+    list-style: none;
+    padding-left: 80px;
+}
+
+.rotate1 {
+    transform: rotate(0deg) ;
+    -webkit-transform: rotate(0deg) ;
+    -moz-transform: rotate(0deg) ;
+    -ms-transform: rotate(0deg) ;
+
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+}
+
+.rotate2 {
+    transform: rotate(90deg) ;
+    -webkit-transform: rotate(90deg) ;
+    -moz-transform: rotate(90deg) ;
+    -ms-transform: rotate(90deg) ;
+
+    transition:.5s;
+    -webkit-transition:.5s;
+    -moz-transition:.5s;
+    -ms-transition:.5s;
+}
+
+.clickme {
+    cursor: pointer;
+}
+
+/*=============================== Helpers ===============================*/
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
