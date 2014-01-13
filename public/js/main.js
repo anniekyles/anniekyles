@@ -30,7 +30,7 @@ $(function(){
 	});
 
 
-	$('.icon-reorder').on('click', function(){
+	$('.fa-bars').on('click', function(){
 		// console.log($(this).next());
 		$(this).next().slideToggle();
 		console.log('toggled');

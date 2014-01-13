@@ -9,21 +9,15 @@
     <meta name="viewport" content="width=device-width">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
-	{{ HTML::style("css/normalize.min.css") }}
-    {{ HTML::style("css/main.css") }}
-	{{ HTML::style("css/styles.css") }}
-    {{ HTML::style('css/jquery.cleditor.css') }}
+	<link media="all" type="text/css" rel="stylesheet" href="public/css/normalize.min.css">
+    <link media="all" type="text/css" rel="stylesheet" href="public/css/main.css">
+	<link media="all" type="text/css" rel="stylesheet" href="public/css/styles.css">
+    <link media="all" type="text/css" rel="stylesheet" href="public/css/jquery.cleditor.css">
     <link href='http://fonts.googleapis.com/css?family=Maven+Pro:500' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-        <!-- jQuery -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-        <!-- fancyBox -->
-        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
@@ -40,16 +34,19 @@
             <nav class="group">
                 <i class="fa-bars"></i>
                 <ul class="full-nav">
-                    <li><a href="{{ URL::to('contact')}}">contact</a></li>
-                    <li><a href="{{ URL::to('web')}}">web gallery</a></li>
-                    <li><a href="{{ URL::to('design')}}">design gallery</a></li>
-                    <li><a href="{{ URL::to('home')}}">home</a></li>
+                    <li><a href="public/contact">contact</a></li>
+                    <li><a href="public/web">web gallery</a></li>
+                    <li><a href="public/design">design gallery</a></li>
+                    <li><a href="public/home">home</a></li>
                 </ul>
             </nav>
         </div>
         <div id="main" class="group">
 
-@yield('content')
+    <div id="home-beam">
+        <img id="portrait" src="img/Portrait.jpg" alt="Portrait" height="80" width="80">
+        <h2>welcome</h2>
+    </div>
 
         </div> <!-- #main -->
     </div> <!-- #main-container -->
@@ -60,11 +57,11 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-	{{ HTML::script("js/plugins.js") }}
-    {{ HTML::script("js/jquery.jeditable.js") }}
-    {{ HTML::script("js/jquery.cleditor.js") }}
-	{{ HTML::script("js/main.js") }}
-    {{ HTML::script("js/formValidation.js") }}
+	<script src="public/js/plugins.js"></script>
+    <script src="public/js/jquery.jeditable.js"></script>
+    <script src="public/js/jquery.cleditor.js"></script>
+	<script src="public/js/main.js"></script>
+    <script src="public/js/formValidation.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -86,6 +83,3 @@
     </div>
 </body>
 </html>
-
-
-

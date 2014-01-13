@@ -89,6 +89,17 @@ p{
     margin: 0 0 0 10%;
     color: #004646;
 }
+
+.footer-container{
+    position: fixed;
+    bottom: 0;
+    margin-left: 20px;
+}
+
+#main{
+    margin-bottom: 40px;
+}
+
 /*                       _     _ _                      _
          _ __ ___   ___ | |__ (_) | ___    _____  _____| |
         | '_ ` _ \ / _ \| '_ \| | |/ _ \  / _ \ \/ / __| |
@@ -98,18 +109,19 @@ p{
 @media only screen and (max-width: 29.99em) {
     .full-nav{
         display: none;
-        border: 1px red solid;
+        /*border: 1px red solid;*/
     }
     .full-nav li{
         width: 100%;
         font-size: 1.2em;
     }
-    .icon-reorder{
+    .fa-bars{
         color: #004646;
         font-size: 1.5em;
         margin: 1em;
         display: block;
         float: left;
+        /*outline: 1px red solid;*/
     }
 
     h1{
@@ -142,7 +154,7 @@ p{
     h1{
         font-size: 2em;
     }
-    .icon-reorder{
+    .fa-bars{
         display: none;
     }
     .full-nav{
