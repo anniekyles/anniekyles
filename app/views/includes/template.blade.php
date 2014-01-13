@@ -9,21 +9,35 @@
     <meta name="viewport" content="width=device-width">
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
+    <!-- styles -->
 	{{ HTML::style("css/normalize.min.css") }}
     {{ HTML::style("css/main.css") }}
 	{{ HTML::style("css/styles.css") }}
-    {{ HTML::style('css/jquery.cleditor.css') }}
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+
+    <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Maven+Pro:500' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.3.0/pure-min.css">
+
+
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
-        <!-- jQuery -->
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-        <!-- fancyBox -->
-        <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-        <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <!-- fancyBox -->
+    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+    <!-- fancyBox: Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
@@ -61,8 +75,6 @@
 
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 	{{ HTML::script("js/plugins.js") }}
-    {{ HTML::script("js/jquery.jeditable.js") }}
-    {{ HTML::script("js/jquery.cleditor.js") }}
 	{{ HTML::script("js/main.js") }}
     {{ HTML::script("js/formValidation.js") }}
 
